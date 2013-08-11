@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2862/trunk/core/src/com/google/zxing/pdf417
+END
+PDF417Common.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2708/trunk/core/src/com/google/zxing/pdf417/PDF417Common.java
+END
+PDF417Writer.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2846/trunk/core/src/com/google/zxing/pdf417/PDF417Writer.java
+END
+PDF417ResultMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2693/trunk/core/src/com/google/zxing/pdf417/PDF417ResultMetadata.java
+END
+PDF417Reader.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2862/trunk/core/src/com/google/zxing/pdf417/PDF417Reader.java
+END

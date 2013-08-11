@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2862/trunk/core/src/com/google/zxing/datamatrix
+END
+DataMatrixWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2819/trunk/core/src/com/google/zxing/datamatrix/DataMatrixWriter.java
+END
+DataMatrixReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2696/trunk/core/src/com/google/zxing/datamatrix/DataMatrixReader.java
+END

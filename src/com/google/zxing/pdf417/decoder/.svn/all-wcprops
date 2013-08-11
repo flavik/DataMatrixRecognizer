@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2862/trunk/core/src/com/google/zxing/pdf417/decoder
+END
+DetectionResultColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2708/trunk/core/src/com/google/zxing/pdf417/decoder/DetectionResultColumn.java
+END
+PDF417ScanningDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2862/trunk/core/src/com/google/zxing/pdf417/decoder/PDF417ScanningDecoder.java
+END
+BarcodeValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2862/trunk/core/src/com/google/zxing/pdf417/decoder/BarcodeValue.java
+END
+DetectionResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2862/trunk/core/src/com/google/zxing/pdf417/decoder/DetectionResult.java
+END
+BoundingBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2708/trunk/core/src/com/google/zxing/pdf417/decoder/BoundingBox.java
+END
+DecodedBitStreamParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2862/trunk/core/src/com/google/zxing/pdf417/decoder/DecodedBitStreamParser.java
+END
+DetectionResultRowIndicatorColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2708/trunk/core/src/com/google/zxing/pdf417/decoder/DetectionResultRowIndicatorColumn.java
+END
+BarcodeMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2693/trunk/core/src/com/google/zxing/pdf417/decoder/BarcodeMetadata.java
+END
+PDF417CodewordDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2693/trunk/core/src/com/google/zxing/pdf417/decoder/PDF417CodewordDecoder.java
+END
+Codeword.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2708/trunk/core/src/com/google/zxing/pdf417/decoder/Codeword.java
+END
