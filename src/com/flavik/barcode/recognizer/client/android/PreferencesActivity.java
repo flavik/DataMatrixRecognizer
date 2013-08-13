@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 
 /**
@@ -35,6 +36,13 @@ import android.preference.PreferenceScreen;
 public final class PreferencesActivity extends PreferenceActivity
     implements OnSharedPreferenceChangeListener {
 
+
+	public static final String KEY_CATEGORY_SCAN = "pref_category_scan";
+	public static final String KEY_CATEGORY_FOUND = "pref_category_found";
+	public static final String KEY_CATEGORY_RESULT = "pref_category_result";
+	public static final String KEY_CATEGORY_GENERAL = "pref_category_general";
+	public static final String KEY_CATEGORY_ERROR = "pref_category_error";
+	
   public static final String KEY_DECODE_1D = "preferences_decode_1D";
   public static final String KEY_DECODE_QR = "preferences_decode_QR";
   public static final String KEY_DECODE_DATA_MATRIX = "preferences_decode_Data_Matrix";
@@ -97,49 +105,38 @@ public final class PreferencesActivity extends PreferenceActivity
 
   private void removeSomePreferences(PreferenceScreen preferences) {
 	  if (preferences != null) {
-		  Preference pref = preferences.findPreference(KEY_PLAY_BEEP);
-		  if (pref != null)
-			  preferences.removePreference(pref);
+		  Preference prefC = preferences.findPreference(KEY_CATEGORY_FOUND);
+		  if (prefC != null) {
+			  preferences.removePreference(prefC);
+		  }	  
 		  
-		  pref = preferences.findPreference(KEY_VIBRATE);
-		  if (pref != null)
-			  preferences.removePreference(pref);
+		  prefC = preferences.findPreference(KEY_CATEGORY_RESULT);
+		  if (prefC != null) {
+			  preferences.removePreference(prefC);
+		  }	  
 		  
-		  pref = preferences.findPreference(KEY_COPY_TO_CLIPBOARD);
-		  if (pref != null)
-			  preferences.removePreference(pref);
 		  
-		  pref = preferences.findPreference(KEY_REMEMBER_DUPLICATES);
+		  prefC = preferences.findPreference(KEY_CATEGORY_GENERAL);
+		  Preference pref = ((PreferenceCategory)prefC).findPreference(KEY_FRONT_LIGHT_MODE);
 		  if (pref != null)
-			  preferences.removePreference(pref);
+			  ((PreferenceCategory)prefC).removePreference(pref);
 		  
-		  pref = preferences.findPreference(KEY_SUPPLEMENTAL);
+		  pref = ((PreferenceCategory)prefC).findPreference(KEY_INVERT_SCAN);
 		  if (pref != null)
-			  preferences.removePreference(pref);
+			  ((PreferenceCategory)prefC).removePreference(pref);
 		  
-		  pref = preferences.findPreference(KEY_CUSTOM_PRODUCT_SEARCH);
+		  pref = ((PreferenceCategory)prefC).findPreference(KEY_AUTO_FOCUS);
 		  if (pref != null)
-			  preferences.removePreference(pref);
+			  ((PreferenceCategory)prefC).removePreference(pref);
 		  
-		  pref = preferences.findPreference(KEY_FRONT_LIGHT_MODE);
+		  pref = ((PreferenceCategory)prefC).findPreference(KEY_SEARCH_COUNTRY);
 		  if (pref != null)
-			  preferences.removePreference(pref);
-		  
-		  pref = preferences.findPreference(KEY_INVERT_SCAN);
-		  if (pref != null)
-			  preferences.removePreference(pref);
-		  
-		  pref = preferences.findPreference(KEY_AUTO_FOCUS);
-		  if (pref != null)
-			  preferences.removePreference(pref);
-		  
-		  pref = preferences.findPreference(KEY_SEARCH_COUNTRY);
-		  if (pref != null)
-			  preferences.removePreference(pref);
-		  
-		  pref = preferences.findPreference(KEY_DISABLE_CONTINUOUS_FOCUS);
-		  if (pref != null)
-			  preferences.removePreference(pref);
+			  ((PreferenceCategory)prefC).removePreference(pref);  
+	  
+		  prefC = preferences.findPreference(KEY_CATEGORY_ERROR);
+		  if (prefC != null) {
+			  preferences.removePreference(prefC);
+		  }	  
 	  }
 	  
   }
